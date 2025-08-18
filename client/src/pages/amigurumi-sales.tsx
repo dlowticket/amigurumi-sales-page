@@ -153,16 +153,7 @@ export default function AmigurumiSales() {
       </header>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Breadcrumbs */}
-        <nav className="text-sm mb-6" aria-label="Breadcrumb">
-          <ol className="flex items-center space-x-2 text-gray-500">
-            <li><a href="#" className="hover:text-brand-purple">Início</a></li>
-            <li><i className="fas fa-chevron-right text-xs"></i></li>
-            <li><a href="#" className="hover:text-brand-purple">Amigurumis</a></li>
-            <li><i className="fas fa-chevron-right text-xs"></i></li>
-            <li className="text-gray-700">Dorminhoco</li>
-          </ol>
-        </nav>
+
 
         {/* Product Section */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 mb-16">
