@@ -1,0 +1,71 @@
+Objetivo
+Crie um projeto pronto para Replit (HTML/CSS/JS) chamado "amigurumi-sales-page" com arquivos index.html, styles.css, app.js. A página deve ser uma página de vendas (product page) modelada na imagem anexa e otimizada para conversão. O produto é:
+Título: "Passo a passo PDF - Amigurumi Dorminhoco: A Fofura que Dorme! 😴💤"
+Use a imagem de referência: /mnt/data/e439fbbc-bca6-40e0-bdcd-972de07c9247.png
+
+Layout & comportamento
+1. Cabeçalho simples com logo à esquerda (pode ser texto "Pistache" como placeholder) e link para carrinho no topo direito.
+2. Seção principal em duas colunas (desktop):
+   - Coluna esquerda (60%): galeria de imagens com miniaturas verticais à esquerda da imagem principal. Clique nas miniaturas para trocar a imagem principal. Zoom leve ao passar o mouse (hover) na imagem principal.
+   - Coluna direita (40%): título, breadcrumbs pequenos, preço com preço antigo riscado e preço atual destacado, seletor de quantidade (− / 1 / +), botão CTA grande e roxo "Comprar" (cor similar à imagem), botão secundário "Adicionar ao carrinho".
+   - Abaixo do botão: formas de pagamento (ícones), política de envio digital (texto curto), e botões de compartilhar (Facebook, Twitter, Pinterest).
+3. Descrição do produto com seções:
+   - Texto curto de destaque
+   - Lista de benefícios/itens inclusos (PDF + instruções passo a passo)
+   - Atenção / aviso sobre envio digital
+   - FAQ em acordeão (3 perguntas)
+4. Seção "Compre Junto" com dois card products e preço combinado (simular desconto ao selecionar ambos).
+5. Footer com links (Contato, Perguntas Frequentes, Política de Privacidade).
+
+Funcionalidades JavaScript
+- Galeria: trocar imagem principal ao clicar, miniatura ativa.
+- Seletor de quantidade com validação (min 1, max 50).
+- CTA "Comprar": abre modal com resumo do pedido + formulário: nome, e-mail, método de pagamento (simular Stripe/Paypal com botão “Pagar (Simulado)”). Após "pagar", mostrar tela de confirmação e instruções "arquivo será enviado por e-mail".
+- "Adicionar ao carrinho": adiciona item ao carrinho local (localStorage) e atualiza contador do carrinho no cabeçalho.
+- Compre Junto: marcar/desmarcar e recalcular preço total e desconto.
+- Validação de formulário (front-end) e mensagens de sucesso/erro.
+
+Design e CSS
+- Use CSS moderno: layout baseado em grid/flex. Pode usar Tailwind ou CSS vanilla — preferência: CSS vanilla com classes bem nomeadas.
+- Tipografia: usar Google Fonts (ex.: Poppins para títulos, Inter para corpo).
+- Paleta: branco de fundo, cinza claro para áreas, roxo #A96FE2 (ou similar) para CTA, verde suave para confirmação.
+- Botões com borda arredondada, sombras suaves e transições.
+- Responsividade: 
+  - mobile (≤ 600px) — imagens empilhadas, galeria horizontal (miniaturas em linha), botão CTA fixo no fundo ou facilmente acessível;
+  - tablet (600–1024px) — layout adaptado, duas colunas mais estreitas;
+  - desktop (≥ 1024px) — layout de imagem + coluna de detalhes como na imagem de referência.
+
+Acessibilidade e SEO
+- Meta tags básicas: title, description, open graph (og:image, og:title, og:description).
+- Todas as imagens com alt.
+- Labels em inputs, foco visível, navegação por teclado.
+- Estrutura semântica: header, main, article, aside, footer.
+
+Assets & placeholders
+- Use a imagem: /mnt/data/e439fbbc-bca6-40e0-bdcd-972de07c9247.png como imagem principal; gerar 3 miniaturas (pode reutilizar a mesma imagem em tamanhos diferentes).
+- Ícones: Font Awesome (ou SVG inline).
+- Texto: forneça copy de exemplo (veja abaixo) e marque lugares pra o cliente trocar.
+
+Copy de exemplo (já pronto para colar)
+- Título: Passo a passo PDF - Amigurumi Dorminhoco: A Fofura que Dorme! 😴💤
+- Preço antigo: R$12,90
+- Preço atual: R$9,90
+- Descrição curta: "Aprenda passo a passo a confeccionar o amigurumi Dorminhoco com instruções detalhadas em PDF — ideal para iniciantes e presentes cheios de amor."
+- Bullet points:
+  • PDF detalhado com fotos passo-a-passo  
+  • Nível: Iniciante / Intermediário  
+  • Arquivo digital enviado por e-mail após confirmação de pagamento  
+- Aviso: "ATENÇÃO: após a compra, o arquivo será enviado por e-mail ou WhatsApp."
+
+Entrega e testes
+- Entregar código pronto para rodar no Replit (index.html, styles.css, app.js, assets/).
+- Incluir README.md com instruções de como testar (rodar, onde trocar imagens, como substituir o e-mail de envio simulado).
+- Incluir comentários no JS onde integrar uma gateway real (Stripe/Gumroad/Hotmart) — substituir o processo simulado.
+
+Extras opcionais (bônus)
+- Animação leve ao adicionar ao carrinho (fly to cart).
+- Badge "20% OFF" no card do produto.
+- Pixel de conversão/placeholder para Google Analytics.
+
+Observação final
+Crie o projeto totalmente funcional com HTML/CSS/JS (sem backend necessário). Se for usar bibliotecas, limite a: Google Fonts, Font Awesome, e uma pequena lib para modal (opcional). Caso queira, implemente modal/accordeon em JS puro.
