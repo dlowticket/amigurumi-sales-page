@@ -27,16 +27,16 @@ export default function AmigurumiSales() {
 
   const images = [
     {
-      src: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800',
-      alt: 'Amigurumi Dorminhoco - Visão Frontal'
+      src: '/attached_assets/e8d03537fbaf320a1ff1a0b5bb0d8cc1_1755551674822.jpg',
+      alt: 'Amigurumi Dorminhoco - Boneca azul com ursinho'
     },
     {
-      src: 'https://images.unsplash.com/photo-1566933293069-b55c7f326d3c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800',
-      alt: 'Amigurumi Dorminhoco - Detalhes'
+      src: '/attached_assets/a36ffd7a50759c7cf45dd85837668113_1755551966635.jpg',
+      alt: 'Amigurumi Dorminhoco - Boneca dormindo com almofada'
     },
     {
-      src: 'https://images.unsplash.com/photo-1607015394449-4deba2bf093e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800',
-      alt: 'Amigurumi Dorminhoco - Processo'
+      src: '/attached_assets/ba76bd98b16e6d8b9942f511a9ea6626_1755551576145.jpg',
+      alt: 'Amigurumi Dorminhoco - Bebê dormindo com toalha'
     }
   ];
 
@@ -60,14 +60,14 @@ export default function AmigurumiSales() {
       id: 'amigurumi-dorminhoco',
       name: 'Amigurumi Dorminhoco',
       price: 9.90,
-      image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200',
+      image: '/attached_assets/e8d03537fbaf320a1ff1a0b5bb0d8cc1_1755551674822.jpg',
       included: true
     },
     {
       id: 'kit-familia',
       name: 'Kit Amigurumi Família',
       price: 19.90,
-      image: 'https://images.unsplash.com/photo-1607015394449-4deba2bf093e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200'
+      image: '/attached_assets/ba76bd98b16e6d8b9942f511a9ea6626_1755551576145.jpg'
     }
   ];
 
@@ -96,7 +96,7 @@ export default function AmigurumiSales() {
       name: product.name,
       price: product.price,
       quantity: quantity,
-      image: images[0].src
+      image: '/attached_assets/e8d03537fbaf320a1ff1a0b5bb0d8cc1_1755551674822.jpg'
     });
 
     setAddToCartSuccess(true);
