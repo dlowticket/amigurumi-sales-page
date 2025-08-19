@@ -66,11 +66,12 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
         Leve os 2 PDFs por apenas <span className="font-bold text-brand-purple">R$ 18,90</span> - Economize R$ 4,00!
       </p>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
+      <div className="flex flex-col lg:flex-row gap-6 items-center justify-center">
         {products.map((product, index) => (
-          <div key={product.id}>
+          <div key={product.id} className="w-full max-w-sm">
+            {/* Mobile + symbol */}
             {index > 0 && (
-              <div className="text-center mb-4 lg:mb-0 lg:hidden">
+              <div className="text-center lg:hidden mb-4">
                 <div className="inline-flex items-center justify-center w-10 h-10 bg-brand-purple text-white rounded-full font-bold text-xl">
                   +
                 </div>
@@ -103,14 +104,6 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
                 R${product.price.toFixed(2).replace('.', ',')}
               </div>
             </div>
-
-            {index === 0 && (
-              <div className="hidden lg:block text-center">
-                <div className="inline-flex items-center justify-center w-10 h-10 bg-brand-purple text-white rounded-full font-bold text-xl">
-                  +
-                </div>
-              </div>
-            )}
           </div>
         ))}
       </div>
