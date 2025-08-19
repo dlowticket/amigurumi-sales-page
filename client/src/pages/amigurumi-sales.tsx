@@ -27,15 +27,15 @@ export default function AmigurumiSales() {
 
   const images = [
     {
-      src: '/attached_assets/e8d03537fbaf320a1ff1a0b5bb0d8cc1_1755551674822.jpg',
+      src: 'https://i.ibb.co/dzf2Wnh/e8d03537fbaf320a1ff1a0b5bb0d8cc1.jpg',
       alt: 'Amigurumi Dorminhoco - Boneca azul com ursinho'
     },
     {
-      src: '/attached_assets/a36ffd7a50759c7cf45dd85837668113_1755551966635.jpg',
+      src: 'https://i.ibb.co/SXx40ptt/a36ffd7a50759c7cf45dd85837668113.jpg',
       alt: 'Amigurumi Dorminhoco - Boneca dormindo com almofada'
     },
     {
-      src: '/attached_assets/ba76bd98b16e6d8b9942f511a9ea6626_1755551576145.jpg',
+      src: 'https://i.ibb.co/v6SDqPry/ba76bd98b16e6d8b9942f511a9ea6626.jpg',
       alt: 'Amigurumi Dorminhoco - Bebê dormindo com toalha'
     }
   ];
@@ -60,14 +60,14 @@ export default function AmigurumiSales() {
       id: 'amigurumi-dorminhoco',
       name: 'Amigurumi Dorminhoco',
       price: 9.90,
-      image: '/attached_assets/e8d03537fbaf320a1ff1a0b5bb0d8cc1_1755551674822.jpg',
+      image: 'https://i.ibb.co/dzf2Wnh/e8d03537fbaf320a1ff1a0b5bb0d8cc1.jpg',
       included: true
     },
     {
       id: 'kit-familia',
       name: 'Kit Amigurumi Família',
       price: 19.90,
-      image: '/attached_assets/ba76bd98b16e6d8b9942f511a9ea6626_1755551576145.jpg'
+      image: 'https://i.ibb.co/v6SDqPry/ba76bd98b16e6d8b9942f511a9ea6626.jpg'
     }
   ];
 
@@ -96,7 +96,7 @@ export default function AmigurumiSales() {
       name: product.name,
       price: product.price,
       quantity: quantity,
-      image: '/attached_assets/e8d03537fbaf320a1ff1a0b5bb0d8cc1_1755551674822.jpg'
+      image: 'https://i.ibb.co/dzf2Wnh/e8d03537fbaf320a1ff1a0b5bb0d8cc1.jpg'
     });
 
     setAddToCartSuccess(true);
