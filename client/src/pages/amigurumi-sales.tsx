@@ -287,6 +287,9 @@ export default function AmigurumiSales() {
           </div>
         </div>
 
+        {/* Buy Together Section */}
+        <BundleSection products={bundleProducts} onBuyBundle={handleBuyBundle} />
+
         {/* Social Proof Section */}
         <section className="mb-16">
           <div className="max-w-6xl mx-auto">
@@ -476,9 +479,6 @@ export default function AmigurumiSales() {
             </div>
           </div>
         </section>
-
-        {/* Buy Together Section */}
-        <BundleSection products={bundleProducts} onBuyBundle={handleBuyBundle} />
 
         {/* Description Section */}
         <section className="mb-16">
