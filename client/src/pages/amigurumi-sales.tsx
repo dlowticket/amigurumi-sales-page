@@ -287,6 +287,196 @@ export default function AmigurumiSales() {
           </div>
         </div>
 
+        {/* Social Proof Section */}
+        <section className="mb-16">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="font-poppins font-bold text-2xl lg:text-3xl text-gray-900 mb-2 text-center">
+              O que nossos clientes estão dizendo
+            </h2>
+            <p className="text-center text-gray-600 mb-12">
+              Mais de 1.500+ pessoas já criaram seus amigurumis com nossos tutoriais
+            </p>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+              {/* Depoimento 1 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                  <span className="text-sm text-gray-500 ml-2">5.0</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  "Simplesmente PERFEITO! As instruções são super claras e detalhadas. Mesmo sendo iniciante consegui fazer um amigurumi lindo. Minha filha ficou encantada! 🥰"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-pink-400 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
+                    M
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Maria Silva</p>
+                    <p className="text-sm text-gray-500">Comprou há 2 dias</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Depoimento 2 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                  <span className="text-sm text-gray-500 ml-2">5.0</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  "Tutorial incrível! As fotos passo a passo fazem toda diferença. Já fiz 3 amigurumis e todos ficaram lindos. Super recomendo! Vale cada centavo 💖"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full flex items-center justify-center text-white font-bold">
+                    A
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Ana Costa</p>
+                    <p className="text-sm text-gray-500">Comprou há 1 semana</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Depoimento 3 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                  <span className="text-sm text-gray-500 ml-2">5.0</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  "Que tutorial maravilhoso! Muito bem explicado e fácil de seguir. O resultado final é uma fofura. Já estou pensando em fazer mais! 😍✨"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center text-white font-bold">
+                    C
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Carla Santos</p>
+                    <p className="text-sm text-gray-500">Comprou há 3 dias</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Depoimento 4 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                  <span className="text-sm text-gray-500 ml-2">5.0</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  "Amei demais! Super didático e bem organizado. Consegui fazer em um fim de semana. Agora quero o combo para fazer a bailarina também! 💃"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-purple-400 to-pink-500 rounded-full flex items-center justify-center text-white font-bold">
+                    L
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Lucia Ferreira</p>
+                    <p className="text-sm text-gray-500">Comprou há 5 dias</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Depoimento 5 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                  <span className="text-sm text-gray-500 ml-2">5.0</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  "Produto excelente! Tutorial muito bem feito com explicações claras. Meu primeiro amigurumi ficou perfeito. Já indiquei para várias amigas! ⭐"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white font-bold">
+                    J
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Julia Oliveira</p>
+                    <p className="text-sm text-gray-500">Comprou há 1 dia</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Depoimento 6 */}
+              <div className="bg-white rounded-xl p-6 shadow-lg border border-gray-100">
+                <div className="flex items-center mb-4">
+                  <div className="flex text-yellow-400">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                  </div>
+                  <span className="text-sm text-gray-500 ml-2">5.0</span>
+                </div>
+                <p className="text-gray-700 mb-4 leading-relaxed">
+                  "Melhor investimento que fiz! O PDF é completo e as fotos ajudam muito. Fiz para presentear minha neta e ela adorou. Parabéns pelo trabalho! 👏"
+                </p>
+                <div className="flex items-center">
+                  <div className="w-10 h-10 bg-gradient-to-r from-teal-400 to-blue-500 rounded-full flex items-center justify-center text-white font-bold">
+                    R
+                  </div>
+                  <div className="ml-3">
+                    <p className="font-semibold text-gray-900">Rosa Almeida</p>
+                    <p className="text-sm text-gray-500">Comprou há 4 dias</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Stats Section */}
+            <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-purple mb-2">1.500+</div>
+                <div className="text-gray-600">Clientes satisfeitos</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-purple mb-2">4.9/5</div>
+                <div className="text-gray-600">Avaliação média</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-purple mb-2">98%</div>
+                <div className="text-gray-600">Recomendam</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-brand-purple mb-2">24h</div>
+                <div className="text-gray-600">Suporte rápido</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Buy Together Section */}
         <BundleSection products={bundleProducts} onBuyBundle={handleBuyBundle} />
 
