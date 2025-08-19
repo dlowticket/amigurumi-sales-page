@@ -1,16 +1,13 @@
 import { useState } from 'react';
-import { useCart } from '@/hooks/use-cart';
 import ProductGallery from '@/components/product-gallery';
 import PurchaseModal from '@/components/purchase-modal';
 import FAQAccordion from '@/components/faq-accordion';
 import BundleSection from '@/components/bundle-section';
 
 export default function AmigurumiSales() {
-  const { addToCart, getTotalItems } = useCart();
   const [quantity, setQuantity] = useState(1);
   const [isPurchaseModalOpen, setIsPurchaseModalOpen] = useState(false);
   const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
-  const [addToCartSuccess, setAddToCartSuccess] = useState(false);
 
   const product = {
     id: 'amigurumi-dorminhoco',
@@ -90,18 +87,7 @@ export default function AmigurumiSales() {
     }
   };
 
-  const handleAddToCart = () => {
-    addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      quantity: quantity,
-      image: 'https://i.ibb.co/dzf2Wnh/e8d03537fbaf320a1ff1a0b5bb0d8cc1.jpg'
-    });
 
-    setAddToCartSuccess(true);
-    setTimeout(() => setAddToCartSuccess(false), 2000);
-  };
 
   const handleBuyNow = () => {
     setIsPurchaseModalOpen(true);
@@ -139,14 +125,6 @@ export default function AmigurumiSales() {
               <h1 className="font-poppins font-bold text-2xl text-gray-900">Pistache</h1>
             </div>
             <div className="flex items-center space-x-4">
-              <button className="relative p-2 text-gray-600 hover:text-brand-purple transition-colors">
-                <i className="fas fa-shopping-cart text-xl"></i>
-                {getTotalItems() > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-brand-purple text-white rounded-full w-5 h-5 text-xs flex items-center justify-center">
-                    {getTotalItems()}
-                  </span>
-                )}
-              </button>
             </div>
           </div>
         </div>
@@ -249,18 +227,7 @@ export default function AmigurumiSales() {
                   <i className="fas fa-bolt mr-2"></i>
                   Comprar Agora
                 </button>
-                <button
-                  type="button"
-                  className={`w-full font-semibold py-4 px-6 rounded-xl transition-all shadow-sm ${
-                    addToCartSuccess
-                      ? 'bg-success-green border-success-green text-white'
-                      : 'bg-white border-2 border-brand-purple text-brand-purple hover:bg-brand-purple hover:text-white'
-                  }`}
-                  onClick={handleAddToCart}
-                >
-                  <i className={`fas ${addToCartSuccess ? 'fa-check' : 'fa-shopping-cart'} mr-2`}></i>
-                  {addToCartSuccess ? 'Adicionado!' : 'Adicionar ao Carrinho'}
-                </button>
+
               </div>
 
               {/* Payment Methods */}
@@ -279,7 +246,7 @@ export default function AmigurumiSales() {
                 <div className="flex items-start gap-2">
                   <i className="fas fa-exclamation-triangle text-yellow-600 mt-1"></i>
                   <div className="text-sm text-yellow-800">
-                    <strong>ATENÇÃO:</strong> Após a compra, o arquivo será enviado por e-mail ou WhatsApp.
+                    <strong>ATENÇÃO:</strong> Após a compra, o arquivo será enviado por e-mail.
                   </div>
                 </div>
               </div>
@@ -315,6 +282,9 @@ export default function AmigurumiSales() {
           </div>
         </div>
 
+        {/* Buy Together Section */}
+        <BundleSection products={bundleProducts} onBuyBundle={handleBuyBundle} />
+
         {/* Description Section */}
         <section className="mb-16">
           <div className="max-w-4xl">
@@ -337,9 +307,6 @@ export default function AmigurumiSales() {
             </div>
           </div>
         </section>
-
-        {/* Buy Together Section */}
-        <BundleSection products={bundleProducts} onBuyBundle={handleBuyBundle} />
       </main>
 
       {/* Footer */}
