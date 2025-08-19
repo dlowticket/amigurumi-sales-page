@@ -58,19 +58,8 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
   };
 
   return (
-    <section className="bg-gray-50 rounded-2xl p-6 lg:p-8 mb-16 relative">
-      {/* Badge Mais Vendido */}
-      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-        <div className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-4 py-2 rounded-full shadow-lg">
-          <div className="flex items-center gap-2">
-            <i className="fas fa-fire text-sm"></i>
-            <span className="font-bold text-sm">MAIS VENDIDO</span>
-            <i className="fas fa-fire text-sm"></i>
-          </div>
-        </div>
-      </div>
-
-      <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-2 text-center mt-4">
+    <section className="bg-gray-50 rounded-2xl p-6 lg:p-8 mb-16">
+      <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-2 text-center">
         Oferta Especial
       </h2>
       <p className="text-center text-gray-600 mb-6">
@@ -121,6 +110,17 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
 
       {/* Bundle Pricing */}
       <div className="mt-8 text-center">
+        {/* Badge Mais Vendido */}
+        <div className="inline-block mb-4">
+          <div className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-4 py-2 rounded-full shadow-lg animate-pulse">
+            <div className="flex items-center gap-2">
+              <i className="fas fa-fire text-sm"></i>
+              <span className="font-bold text-sm">MAIS VENDIDO</span>
+              <i className="fas fa-fire text-sm"></i>
+            </div>
+          </div>
+        </div>
+
         <div className="space-y-2">
           <div className="text-2xl font-bold text-gray-900">
             Preço total: <span className="text-brand-purple">R${getBundlePrice().toFixed(2).replace('.', ',')}</span>
@@ -134,7 +134,7 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
 
         <button
           type="button"
-          className="mt-6 bg-success-green text-white font-semibold py-3 px-8 rounded-xl hover:bg-green-600 transition-colors shadow-lg"
+          className="mt-6 bg-success-green text-white font-semibold py-3 px-8 rounded-xl hover:bg-green-600 transition-colors shadow-lg relative"
           onClick={handleBuyBundle}
         >
           <i className="fas fa-shopping-cart mr-2"></i>
