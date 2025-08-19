@@ -58,8 +58,19 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
   };
 
   return (
-    <section className="bg-gray-50 rounded-2xl p-6 lg:p-8 mb-16">
-      <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-2 text-center">
+    <section className="bg-gray-50 rounded-2xl p-6 lg:p-8 mb-16 relative">
+      {/* Badge Mais Vendido */}
+      <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+        <div className="bg-gradient-to-r from-orange-400 to-red-500 text-white px-4 py-2 rounded-full shadow-lg">
+          <div className="flex items-center gap-2">
+            <i className="fas fa-fire text-sm"></i>
+            <span className="font-bold text-sm">MAIS VENDIDO</span>
+            <i className="fas fa-fire text-sm"></i>
+          </div>
+        </div>
+      </div>
+
+      <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-2 text-center mt-4">
         Oferta Especial
       </h2>
       <p className="text-center text-gray-600 mb-6">
