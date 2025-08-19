@@ -321,18 +321,9 @@ export default function AmigurumiSales() {
             <div>
               <h4 className="font-semibold mb-4">Links Úteis</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contato</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Perguntas Frequentes</a></li>
                 <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Política de Privacidade</a></li>
               </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Contato</h4>
-              <div className="space-y-2 text-gray-400">
-                <div><i className="fas fa-envelope mr-2"></i>contato@pistache.com</div>
-                <div><i className="fab fa-whatsapp mr-2"></i>(11) 99999-9999</div>
-              </div>
             </div>
           </div>
 
