@@ -8,6 +8,14 @@ This is a React-based e-commerce sales page specifically designed for selling a 
 
 Preferred communication style: Simple, everyday language.
 
+## Recent Changes (August 19, 2025)
+
+### Checkout Integration Update
+- **Modified purchase flow**: Removed purchase modal system in favor of direct checkout redirects
+- **Individual product checkout**: "Comprar Agora" button now redirects to `https://checkout.digitais.online/VCCL1O8SC61B`
+- **Bundle/combo checkout**: When 2 products are selected in bundle section, redirects to `https://checkout.digitais.online/VCCL1O8SC62Q`
+- **Simplified user experience**: Eliminated data collection forms, streamlined directly to external payment processor
+
 ## System Architecture
 
 ### Frontend Architecture

@@ -90,12 +90,20 @@ export default function AmigurumiSales() {
 
 
   const handleBuyNow = () => {
-    setIsPurchaseModalOpen(true);
+    // Redireciona direto para o checkout do produto individual
+    window.location.href = 'https://checkout.digitais.online/VCCL1O8SC61B';
   };
 
   const handleBuyBundle = (selectedProducts: any[]) => {
     console.log('Buying bundle:', selectedProducts);
-    // Here you would implement the bundle purchase logic
+    
+    // Se tem 2 produtos selecionados, redireciona para o checkout do combo
+    if (selectedProducts.length === 2) {
+      window.location.href = 'https://checkout.digitais.online/VCCL1O8SC62Q';
+    } else {
+      // Se apenas 1 produto, redireciona para o checkout individual
+      window.location.href = 'https://checkout.digitais.online/VCCL1O8SC61B';
+    }
   };
 
   const handlePurchaseSuccess = () => {
