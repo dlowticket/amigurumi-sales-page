@@ -41,8 +41,11 @@ export default function ProductGallery({ images }: ProductGalleryProps) {
           />
           
           {/* Sale Badge */}
-          <div className="absolute top-4 left-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            20% OFF
+          <div className="absolute top-4 left-4 bg-gradient-to-r from-red-500 to-red-600 text-white px-4 py-2 rounded-full text-sm font-bold shadow-lg animate-pulse">
+            <div className="flex flex-col items-center">
+              <span>20% OFF</span>
+              <span className="text-xs">+ OFERTA LIMITADA</span>
+            </div>
           </div>
         </div>
       </div>

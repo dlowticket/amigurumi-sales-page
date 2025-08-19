@@ -168,9 +168,9 @@ export default function AmigurumiSales() {
                     R${product.oldPrice.toFixed(2).replace('.', ',')}
                   </span>
                 </div>
-                <div className="text-sm text-success-green font-medium">
+                <div className="text-sm text-success-green font-bold bg-green-50 px-3 py-2 rounded-lg border border-green-200">
                   <i className="fas fa-bolt mr-1"></i>
-                  Economize R${(product.oldPrice - product.price).toFixed(2).replace('.', ',')} (23% de desconto)
+                  Economize R${(product.oldPrice - product.price).toFixed(2).replace('.', ',')} (23% de desconto) + OFERTA LIMITADA!
                 </div>
               </div>
 
