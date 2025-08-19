@@ -55,16 +55,16 @@ export default function AmigurumiSales() {
   const bundleProducts = [
     {
       id: 'amigurumi-dorminhoco',
-      name: 'Amigurumi Dorminhoco',
+      name: 'PDF Amigurumi Dorminhoco',
       price: 9.90,
       image: 'https://i.ibb.co/dzf2Wnh/e8d03537fbaf320a1ff1a0b5bb0d8cc1.jpg',
       included: true
     },
     {
-      id: 'kit-familia',
-      name: 'Kit Amigurumi Família',
-      price: 19.90,
-      image: 'https://i.ibb.co/v6SDqPry/ba76bd98b16e6d8b9942f511a9ea6626.jpg'
+      id: 'amigurumi-bailarina',
+      name: 'PDF Amigurumi Bailarina',
+      price: 12.90,
+      image: 'https://i.ibb.co/xqhDxFpp/952023ec815f895b5a268e8885d57d4c.jpg'
     }
   ];
 

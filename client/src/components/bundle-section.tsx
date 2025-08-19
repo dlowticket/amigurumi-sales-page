@@ -29,16 +29,27 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
     );
   };
 
-  const getTotal = () => {
+  const getBundlePrice = () => {
+    // Oferta especial: quando ambos produtos estão selecionados, preço fixo de R$ 18,90
+    if (selectedProducts.length === 2) {
+      return 18.90;
+    }
+    // Caso contrário, soma dos preços individuais
+    return products
+      .filter(p => selectedProducts.includes(p.id))
+      .reduce((total, p) => total + p.price, 0);
+  };
+
+  const getRegularTotal = () => {
     return products
       .filter(p => selectedProducts.includes(p.id))
       .reduce((total, p) => total + p.price, 0);
   };
 
   const getDiscount = () => {
-    const total = getTotal();
-    const regularTotal = products.reduce((sum, p) => sum + p.price, 0);
-    return selectedProducts.length > 1 ? regularTotal - total + 4.90 : 0;
+    const bundlePrice = getBundlePrice();
+    const regularTotal = getRegularTotal();
+    return selectedProducts.length === 2 ? regularTotal - bundlePrice : 0;
   };
 
   const handleBuyBundle = () => {
@@ -48,9 +59,12 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
 
   return (
     <section className="bg-gray-50 rounded-2xl p-6 lg:p-8 mb-16">
-      <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-6 text-center">
-        Compre Junto e Economize
+      <h2 className="font-poppins font-bold text-2xl text-gray-900 mb-2 text-center">
+        Oferta Especial
       </h2>
+      <p className="text-center text-gray-600 mb-6">
+        Leve os 2 PDFs por apenas <span className="font-bold text-brand-purple">R$ 18,90</span> - Economize R$ 4,00!
+      </p>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
         {products.map((product, index) => (
@@ -105,7 +119,7 @@ export default function BundleSection({ products, onBuyBundle }: BundleSectionPr
       <div className="mt-8 text-center">
         <div className="space-y-2">
           <div className="text-2xl font-bold text-gray-900">
-            Preço total: <span className="text-brand-purple">R${getTotal().toFixed(2).replace('.', ',')}</span>
+            Preço total: <span className="text-brand-purple">R${getBundlePrice().toFixed(2).replace('.', ',')}</span>
           </div>
           {getDiscount() > 0 && (
             <div className="text-success-green font-semibold">
