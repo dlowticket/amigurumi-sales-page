@@ -14,7 +14,7 @@ export default function AmigurumiSales() {
     name: 'Passo a passo PDF - Amigurumi Dorminhoco: A Fofura que Dorme! 😴💤',
     price: 9.90,
     oldPrice: 12.90,
-    description: 'Aprenda passo a passo a confeccionar o amigurumi Dorminhoco com instruções detalhadas em PDF — ideal para iniciantes e presentes cheios de amor.',
+    description: 'Confeccione o amigurumi Dorminhoco com instruções detalhadas em PDF — ideal para iniciantes e presentes cheios de amor.',
     features: [
       'PDF detalhado com fotos passo-a-passo',
       'Nível: Iniciante / Intermediário',
