@@ -174,10 +174,7 @@ export default function AmigurumiSales() {
                 </div>
               </div>
 
-              {/* Short Description */}
-              <div className="text-gray-600 leading-relaxed">
-                {product.description}
-              </div>
+
 
               {/* Features */}
               <div className="space-y-3">
