@@ -239,10 +239,9 @@ export default function AmigurumiSales() {
               <div className="space-y-3">
                 <h4 className="font-semibold text-gray-900">Formas de pagamento:</h4>
                 <div className="flex items-center gap-4">
-                  <i className="fab fa-cc-visa text-2xl text-blue-600"></i>
-                  <i className="fab fa-cc-mastercard text-2xl text-red-500"></i>
-                  <i className="fab fa-paypal text-2xl text-blue-500"></i>
                   <i className="fas fa-credit-card text-2xl text-teal-500"></i>
+                  <i className="fas fa-qrcode text-2xl text-green-600"></i>
+                  <span className="text-sm font-medium text-gray-700">PIX</span>
                 </div>
               </div>
 
