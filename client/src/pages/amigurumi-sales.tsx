@@ -240,8 +240,11 @@ export default function AmigurumiSales() {
                 <h4 className="font-semibold text-gray-900">Formas de pagamento:</h4>
                 <div className="flex items-center gap-4">
                   <i className="fas fa-credit-card text-2xl text-teal-500"></i>
-                  <i className="fas fa-qrcode text-2xl text-green-600"></i>
-                  <span className="text-sm font-medium text-gray-700">PIX</span>
+                  <img 
+                    src="https://i.ibb.co/k6KF1gzg/logo-pix-520x520.png" 
+                    alt="PIX" 
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
               </div>
 
